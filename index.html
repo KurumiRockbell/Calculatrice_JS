@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Calculatrice Kurumi</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="calc_container">
+        </div>
+        <div class="ecran">
+            <p id="output">0</p>
+        </div>
+        <div class="c_btn">
+            <button class="pink_btn" type="button" onclick="forclear()">C</button>
+        </div>
+        <div class="btn_un">
+            <button class="purple_btn" type="button" value="1" onclick="fordisplay('1')">1</button>
+        </div>
+        <div class="btn_deux">
+            <button class="purple_btn" type="button" value="2" onclick="fordisplay('2')">2</button>
+        </div>
+        <div class="btn_trois">
+            <button class="purple_btn" type="button" value="3" onclick="fordisplay('3')">3</button>
+        </div>
+        <div class="btn_slash">
+            <button class="purple_btn" type="button" value="÷" onclick="perc()">/</button>
+        </div>
+        <div class="btn_quatre">
+            <button class="purple_btn" type="button" value="4" onclick="fordisplay('4')">4</button>
+        </div>
+        <div class="btn_cinq">
+            <button class="purple_btn" type="button" value="5" onclick="fordisplay('5')">5</button>
+        </div>
+        <div class="btn_six">
+            <button class="purple_btn" type="button" value="6" onclick="fordisplay('6')">6</button>
+        </div>
+        <div class="btn-tiret">
+            <button class="purple_btn" type="button" value="-" onclick="fordisplay('-')">-</button>
+        </div>
+        <div class="btn_sept">
+            <button class="purple_btn" type="button" value="7" onclick="fordisplay('7')">7</button>
+        </div>
+        <div class="btn_huit">
+            <button class="purple_btn" type="button" value="8" onclick="fordisplay('8')">8</button>
+        </div>
+        <div class="btn_neuf">
+            <button class="purple_btn" type="button" value="9" onclick="fordisplay('9')">9</button>
+        </div>
+        <div class="btn_plus">
+            <button class="purple_btn" type="button" value="+" onclick="fordisplay('+')">+</button>
+        </div>
+        <div class="btn_dot">
+            <button class="purple_btn" type="button" value="." onclick="fordisplay('.')">.</button>
+        </div>
+        <div class="btn_zero">
+            <button class="purple_btn" type="button" value="0" onclick="fordisplay('0')">0</button>
+        </div>
+        <div class="btn_egal">
+            <button class="pink_btn" type="button" value="=" onclick="solve()">=</button>
+        </div>
+        <div class="btn_star">
+            <button class="purple_btn" type="button" onclick="fordisplay('*')">*</button>
+        </div>
+        <div class="title_calc">
+            <p id="title_calc"> KURUMI CALCULATRICE </p>
+        </div>
+    </div>
+</body>
+</html>

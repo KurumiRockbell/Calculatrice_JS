@@ -1,0 +1,162 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+}
+
+.calc_container {
+    grid-area: 2 / 2 / 10 / 12;
+    background-color: black;
+    border-radius: 3em;
+    border-style: groove;
+    border-color: aliceblue;
+}
+
+#output {
+    padding-left: 45rem;
+    padding-top: 0.8em;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pink_btn {
+    border-radius: 1.5em;
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+    font-weight: bold;
+    background: rgb(251, 163, 255);
+    background: linear-gradient(90deg, rgba(251, 163, 255, 1) 0%, rgba(93, 154, 255, 1) 100%, rgba(138, 207, 255, 1) 100%);
+}
+
+.pink_btn:hover {
+    cursor: pointer;
+    background: fuchsia;
+}
+
+.purple_btn {
+    background-color: #7F25BE;
+    border-radius: 1.5em;
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.purple_btn:hover {
+    background: linear-gradient(90deg, rgba(251, 163, 255, 1) 0%, rgba(93, 154, 255, 1) 100%, rgba(138, 207, 255, 1) 100%);
+    color: fuchsia;
+}
+
+.ecran {
+    grid-area: 3 / 3 / 4 / 10;
+    background-color: aliceblue;
+    border-radius: 1.5em;
+    margin-right: 1em;
+}
+
+.c_btn {
+    grid-area: 3 / 10 / 4 / 11;
+}
+
+.btn_un {
+    grid-area: 5 / 3 / 6 / 5;
+}
+
+.btn_deux {
+    grid-area: 5 / 5 / 6 / 7;
+}
+
+.btn_trois {
+    grid-area: 5 / 7 / 6 / 9;
+}
+
+.btn_slash {
+    grid-area: 5 / 10 / 6 / 11;
+}
+
+.btn_quatre {
+    grid-area: 6 / 3 / 7 / 5;
+}
+
+.btn_cinq {
+    grid-area: 6 / 5 / 7 / 7;
+}
+
+.btn_six {
+    grid-area: 6 / 7 / 7 / 9;
+}
+
+.btn-tiret {
+    grid-area: 6 / 10 / 7 / 11;
+}
+
+.btn_sept {
+    grid-area: 7 / 3 / 8 / 5;
+}
+
+.btn_huit {
+    grid-area: 7 / 5 / 8 / 7;
+}
+
+.btn_neuf {
+    grid-area: 7 / 7 / 8 / 9;
+}
+
+.btn_plus {
+    grid-area: 7 / 10 / 8 / 11;
+}
+
+.btn_dot {
+    grid-area: 8 / 3 / 9 / 5;
+}
+
+.btn_zero {
+    grid-area: 8 / 5 / 9 / 7;
+}
+
+.btn_egal {
+    grid-area: 8 / 7 / 9 / 9;
+}
+
+.btn_star {
+    grid-area: 8 / 10 / 9 / 11;
+}
+
+.title_calc {
+    grid-area: 2 / 5 / 3 / 8;
+}
+
+#title_calc {
+color: aliceblue;
+font-size: 25px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+margin-left: 3em;
+}
