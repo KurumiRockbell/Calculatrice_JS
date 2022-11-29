@@ -1,7 +1,7 @@
 body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
-    animation: gradient 8s ease infinite;
+    animation: gradient 4s ease infinite;
     height: 100vh;
 }
 
@@ -43,6 +43,11 @@ body {
     font-weight: bold;
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform .2s;
+}
+
+#output:hover {
+    transform: scale(1.1);
 }
 
 .pink_btn {
@@ -79,6 +84,7 @@ body {
     background-color: aliceblue;
     border-radius: 1.5em;
     margin-right: 1em;
+    
 }
 
 .c_btn {
@@ -154,9 +160,18 @@ body {
 }
 
 #title_calc {
-color: aliceblue;
-font-size: 25px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-weight: bold;
-margin-left: 3em;
+    color: aliceblue;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-left: 3em;
+}
+
+.btn_purcent {
+    grid-area: 9 / 3 / 10 / 5;
+}
+
+.btn_division {
+    grid-area: 6 / 11 / 7 / 12;
+    margin-right: 2em;
 }

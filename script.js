@@ -14,7 +14,7 @@ function removeZero() {
     }
 }
 
-/* Fonction pour diviser par 100 en cas de division */
+/* Fonction pour diviser par 100 en cas de division/percentage */
 function perc() {
     var value = document.getElementById("output").innerHTML;
     value = value / 100;
